@@ -274,7 +274,9 @@ const Contact = () => {
 
       {/* Map Section */}
       <div className="bg-gray-100 py-20">
+        {/* <h2>Find Us</h2> */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-semibold">Find Us</h2>
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="aspect-w-16 aspect-h-9">
               <iframe
