@@ -29,16 +29,16 @@ const Navber = () => {
                     {/* Desktop Menu - Centered */}
                     <div className="hidden md:block flex-1">
                         <div className="flex items-center justify-center space-x-8">
-                            <Link to="/" className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                            <Link to="/" className="text-gray-950 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                                 Home
                             </Link>
-                            <Link to="/events" className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                            <Link to="/events" className="text-gray-950 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                                 Events
                             </Link>
-                            <Link to="/about" className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                            <Link to="/about" className="text-gray-950 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                                 About
                             </Link>
-                            <Link to="/contact" className="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                            <Link to="/contact" className="text-gray-950 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">
                                 Contact
                             </Link>
                         </div>
