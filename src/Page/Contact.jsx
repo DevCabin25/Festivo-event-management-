@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaFacebook, FaInstagramSquare, FaLinkedin, FaPhoneAlt, FaYoutube } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,17 +26,17 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: "📍",
+      icon: <IoLocation />,
       title: "Visit Us",
       details: "Khalpar kacha Bazar,Sonargaon Janapath,uttra, Dhaka,",
     },
     {
-      icon: "📞",
+      icon: <FaPhoneAlt />,
       title: "Call Us",
       details: "+01938-456778, 01839-3765889",
     },
     {
-      icon: "✉️",
+      icon: <MdEmail />,
       title: "Email Us",
       details: "festivo@gmail.com",
     },
@@ -51,7 +54,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-400 to-purple-400 py-20">
+      <div className="relative bg-gradient-to-r from-blue-400 to-purple-400 py-28">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -67,18 +70,20 @@ const Contact = () => {
       </div>
 
       {/* Contact Information Cards */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16">
+      <div className=" mx-auto px-4  sm:px-6 lg:px-8 -mt-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {contactInfo.map((info, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-xl p-8 transform hover:-translate-y-2 transition-all duration-300"
+              className="bg-white rounded-2xl flex flex-col justify-center items-center gap-3  shadow-xl p-8 py-10 transform hover:-translate-y-2 transition-all duration-300"
             >
-              <div className="text-4xl mb-4">{info.icon}</div>
+             <div className="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center ">
+                 <div className="text-xl text-purple-500">{info.icon}</div>
+             </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 {info.title}
               </h3>
-              <p className="text-gray-600">{info.details}</p>
+              <p className="text-gray-600 text-center">{info.details}</p>
             </div>
           ))}
         </div>
@@ -88,7 +93,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="bg-white rounded-2xl border border-purple-300 p-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               Send Us a Message
             </h2>
@@ -224,7 +229,7 @@ const Contact = () => {
               </ul>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl  p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Business Hours
               </h3>
@@ -237,7 +242,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl  p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Follow Us
               </h3>
@@ -246,25 +251,25 @@ const Contact = () => {
                   href="#"
                   className="text-blue-600 hover:text-blue-700 text-2xl"
                 >
-                  📱
+                  <FaFacebook />
                 </a>
                 <a
                   href="#"
                   className="text-blue-600 hover:text-blue-700 text-2xl"
                 >
-                  💼
+                 <FaInstagramSquare/>
                 </a>
                 <a
                   href="#"
                   className="text-blue-600 hover:text-blue-700 text-2xl"
                 >
-                  📸
+                <FaYoutube />
                 </a>
                 <a
                   href="#"
                   className="text-blue-600 hover:text-blue-700 text-2xl"
                 >
-                  🐦
+                  <FaLinkedin />
                 </a>
               </div>
             </div>
@@ -274,16 +279,16 @@ const Contact = () => {
 
       {/* Map Section */}
       <div className="bg-gray-100 py-20">
-        {/* <h2>Find Us</h2> */}
+   
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-semibold">Find Us</h2>
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="aspect-w-16 aspect-h-9">
+          <h2 className="text-3xl font-semibold my-4">Find Us</h2>
+          <div className=" rounded-2xl border border-purple-300 p-5 overflow-hidden">
+            <div className="aspect-w-16 aspect-h-9  ">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902327246215!2d90.39945231543147!3d23.81033298456195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4a9f1f0e1b1%3A0x9b8f0e1b1f0e1b1f!2sUttara%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1625564750981!5m2!1sen!2sbd"
                 width="100%"
                 height="450"
-                style={{ border: 0 }}
+                style={{ border: 1 }}
                 allowFullScreen=""
                 loading="lazy"
                 title="Festivo Location"
