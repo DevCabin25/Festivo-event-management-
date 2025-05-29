@@ -13,7 +13,7 @@ const ServiceSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
                         <div>
-                            <img src="https://i.ibb.co/4f1x5z3/event-planning.jpg" alt="Event Planning" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="https://i.ibb.co/1fKxDk2K/download-21.jpg" alt="Event Planning" className="w-full h-48 object-cover rounded-t-lg mb-4" />
 
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Event Planning</h3>
@@ -21,14 +21,14 @@ const ServiceSection = () => {
                     </div>
                     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
                         <div>
-                            <img src="https://i.ibb.co/4f1x5z3/event-planning.jpg" alt="Event Coordination" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="https://i.ibb.co/Gfx4dHXT/download-20.jpg" alt="Event Coordination" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Venue Booking</h3>
                         <p className="text-gray-600">Access to a wide range of venues to suit any occasion.</p>
                     </div>
                     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
                         <div>
-                            <img src="https://i.ibb.co/4f1x5z3/event-planning.jpg" alt="Catering Services" className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                            <img src="https://i.ibb.co/mCj9czM4/download-19.jpg" alt="Catering Services" className="w-full h-48 object-cover rounded-t-lg mb-4" />
                         </div>
                         <h3 className="text-xl font-semibold mb-4">Catering Services</h3>
                         <p className="text-gray-600">Delicious catering options tailored to your event's theme and preferences.</p>
