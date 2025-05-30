@@ -1,17 +1,46 @@
-import { StrictMode } from 'react'
+import { Children, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+
+import Root from './Layout/Root';
+import Home from './Page/Home';
 import {
+
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import About from './Page/About';
+import Contact from './Page/Contact';
+import Event from './Page/Event';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root/>,
+    children: [
+      {
+        path: "/",
+        element: <Home/>,
+
   },
+  {
+    path:"/events",
+    element:<Event></Event>
+
+  },
+
+      {
+        path: "/about",
+        element:<About/> 
+
+  },
+      {
+        path: "/contact",
+        element:<Contact/> 
+
+  },
+]
+  }
 ]);
 
 
