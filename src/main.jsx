@@ -12,6 +12,7 @@ import {
 import About from './Page/About';
 import Contact from './Page/Contact';
 import Event from './Page/Event';
+import CustomPlan from './Page/CustomPlan';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path:"/events",
     element:<Event></Event>
+
+  },
+  {
+    path:"/customplan",
+    element:<CustomPlan/>
 
   },
 
