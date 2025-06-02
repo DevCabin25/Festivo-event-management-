@@ -6,6 +6,7 @@ import AboutSection from '../Components/Home/AboutSection';
 import ServiceSection from '../Components/Home/ServiceSection';
 import Plan from '../Components/Home/Plan';
 import FaqSection from '../Components/Home/FaqSection';
+import Packegs from '../Components/Home/Packegs';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             
             <FaqSection/>
            <Gallery></Gallery>
+           <Packegs></Packegs>
         </div>
     );
 };
