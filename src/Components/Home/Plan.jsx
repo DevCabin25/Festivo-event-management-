@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Plan = () => {
     return (
@@ -60,6 +61,10 @@ const Plan = () => {
                         </div>
                     </div>
                 </div>
+
+
+
+                <Link to={'/events'} className='px-4 py-2 bg-purple-400 text-white font-bold rounded-md'>Custom plam</Link>
             </div>
         </div>
     );
