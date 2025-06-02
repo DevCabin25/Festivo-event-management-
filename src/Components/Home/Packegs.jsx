@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const packages = [
   {
@@ -43,7 +43,7 @@ const packages = [
       "Printed & digital invitations",
     ],
     price: "৳150,000",
-  }
+  },
 ];
 
 const Packegs = () => {
@@ -63,11 +63,14 @@ const Packegs = () => {
   return (
     <div className="bg-gray-50 py-12 px-4 md:px-10 min-h-screen">
       <div className="text-center mb-14">
-        <h2 className="text-4xl font-bold text-blue-600 mb-3">Plan an Event with Festivo</h2>
+        <h2 className="text-4xl font-bold text-blue-600 mb-3">
+          Plan an Event with Festivo
+        </h2>
         <p className="text-gray-700 max-w-3xl mx-auto">
-          We make event planning simple and stress-free. Whether you want a ready-to-go package or a
-          fully customized plan built around your specific needs, Festivo is here to make it happen with
-          style, quality, and care.
+          We make event planning simple and stress-free.Whether you want a
+          ready-to-go package or a fully customized plan built around your
+          specific needs,Festivo is here to make it happen with style,quality,
+          and care.
         </p>
       </div>
 
@@ -81,14 +84,18 @@ const Packegs = () => {
               <h3 className="text-blue-600 text-lg font-semibold mb-1">
                 {pkg.emoji} {pkg.budget}
               </h3>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">{pkg.name}</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                {pkg.name}
+              </h2>
 
               <ul className="list-disc list-inside text-gray-700 mb-4 space-y-1">
                 {pkg.features.map((feature, idx) => (
                   <li key={idx}>{feature}</li>
                 ))}
               </ul>
-              <p className="text-xl font-semibold text-green-600 mb-4">Price: {pkg.price}</p>
+              <p className="text-xl font-semibold text-green-600 mb-4">
+                Price: {pkg.price}
+              </p>
             </div>
 
             <button
@@ -105,7 +112,9 @@ const Packegs = () => {
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-xl p-6 w-full max-w-md">
-            <h2 className="text-xl font-bold mb-4 text-center">Book: {selectedPackage.name}</h2>
+            <h2 className="text-xl font-bold mb-4 text-center">
+              Book: {selectedPackage.name}
+            </h2>
             <form className="space-y-4">
               <input
                 type="text"
